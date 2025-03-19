@@ -1,0 +1,31 @@
+The scheema of Employee CRUD
+
+{
+Model & Migration: Employee, Children, Education, Documents models with relationships.
+Controllers: CRUD operations for Employee, Children, Education, and Documents.
+Views (Blade Templates): Styled forms with CSS.
+Routes: Proper routing for resource management.
+Validation: Input validation for various fields.
+File Uploads: Handling for user image and document uploads.
+Conditional Fields: Children and address fields appearing based on conditions.
+Database Relationships: Proper foreign key associations.
+}
+
+4 tables Employee,child,Education,Documents
+
+child(many ~)<---------(one){Employee}(one)-------->(~ many)education
+                                (one)
+                                |
+                                |
+                               \/
+                            (many ~)
+                          {documents}
+
+Employee_id is foreing key in other 3 tables
+
+(1)  Model (and Relationship)
+(2)  Migrations(scheema)
+(->) views
+(3)  Controller and Routings and Validations(Request)
+
+

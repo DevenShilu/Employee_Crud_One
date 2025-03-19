@@ -1,0 +1,27 @@
+/* Add your CSS code here */
+body {
+    background: linear-gradient(45deg, #ff0066, #ffcc00, #33cc33, #0099ff);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    height: 100vh;
+    margin: 0;
+  }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
